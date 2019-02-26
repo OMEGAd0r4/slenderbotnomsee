@@ -18,7 +18,10 @@ function Play(connection, message)
         }
         else
         {
-            connection.disconnect().then(message.channel.send("``Slenderman has successfully left the voice channel``"))
+            connection.disconnect()
+          {
+              message.channel.send("``Slenderman has successfully left the voice channel``")
+          }
         }
     })
 }
