@@ -20,7 +20,7 @@ class truthordareCommand extends commando.Command {
     {
         message.delete(3000).catch(O_o=>{});
 
-        var victims = ["Hieu", "Quan", "Win", "Nhan", "Sophia", "Jaden", "T.A", "Kavish", "Ella", "B.K", "G.H"];
+        var victims = ["Hieu L", "Quan", "Win", "Nhan", "Sophia", "Jaden", "T.A", "Kavish", "Ella", "B.K", "G.H", "Hieu N", "David"];
 
         var punishments = ["**Record** yourself doing 10 push ups", "**Record** youself recreating an old vine", "**Record** youself pouring water on your head", "**Record** yourself singing (30 seconds)", "**Record** youself cutting a 10, 000 vnd note"]; //var punishments = ["**Record** yourself doing 10 push ups", "**Record** youself recreating an old vine", "**Record** youself pouring water on your head", "**Record** yourself singing (30 seconds)", "**Record** youself cutting a 10, 000 vnd note"];
 
