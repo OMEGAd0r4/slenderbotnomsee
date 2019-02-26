@@ -31,7 +31,7 @@ class botreloadCommand extends commando.Command {
 
       bot.destroy()
 
-      bot.login("NTQ3MzYwMzgyMjk0MTYzNDU4.D01ovA.B3atJErlNcIXVnRmx_aUHSPEw5Q");
+      bot.login(process.env.token);
 
       console.clear()
 
@@ -44,4 +44,4 @@ class botreloadCommand extends commando.Command {
 
 module.exports = botreloadCommand;
 
-//!announce <message>
+//!botreload
