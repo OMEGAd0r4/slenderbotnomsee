@@ -18,7 +18,7 @@ function Play(connection, message)
         }
         else
         {
-            connection.disconnect();
+            connection.disconnect().then(message.channel.send("``Slenderman has successfully left the voice channel``"))
         }
     })
 }
@@ -37,7 +37,7 @@ class joinCommand extends commando.Command{
 
     message.delete(3000).catch(O_o=>{});
 
-    if (message.guild.me.voiceChannel) return message.channel.send("``Sorry, Slenderman is not in a currently in a voice channel!``");
+    if (message.guild.me.voiceChannel) return message.channel.send("``Sorry, Slenderman currently in a voice channel!``");
 
     if (!args) message.channel.send("Usage: !join ``music-url``");
     if (message.member.voiceChannel) {
