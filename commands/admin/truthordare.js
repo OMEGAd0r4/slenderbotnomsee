@@ -45,7 +45,7 @@ class truthordareCommand extends commando.Command {
             .setDescription("The slenderman is now hungry for some answers. He has found his victim: " + victims[Math.floor(Math.random() * victims.length)])
             .addField("If you don't respond to one answer within 1 day or do not do the dare / tell us the truth, you will have to: ", punishments[Math.floor(Math.random() * punishments.length)])
             .addField("__Truth Option__", truthoption[Math.floor(Math.random() * truthoption.length)])
-            .addField("__Dare Option__", dareoption[Math.floor(Math.random() * dareoption.length)
+            .addField("__Dare Option__", dareoption[Math.floor(Math.random() * dareoption.length)])
             .addField("By not doing any of the options will lead into a **kick** / **ban** / **rank downgrade** from the server", ":)")])}) 
     }
 }
