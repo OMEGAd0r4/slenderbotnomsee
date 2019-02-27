@@ -20,8 +20,7 @@ class truthordareCommand extends commando.Command {
     {
         message.delete(3000).catch(O_o=>{});
 
-        var victims = ["Hieu L", "Quan", "Win", "Nhan", "Sophia", "Jaden", "T.A", "Kavish", "Ella", "B.K", "G.H", "Hieu N"
-, "David"];
+        var victims = ["Hieu L", "Quan", "Win", "Nhan", "Sophia", "Jaden", "T.A", "Kavish", "Ella", "B.K", "G.H", "Hieu N", "David"];
 
         var punishments = ["**Record** yourself doing 10 push ups", "**Record** youself recreating an old vine", "**Record** youself pouring water on your head", "**Record** yourself singing (30 seconds)", "**Record** youself cutting a 10, 000 vnd note"]; //var punishments = ["**Record** yourself doing 10 push ups", "**Record** youself recreating an old vine", "**Record** youself pouring water on your head", "**Record** yourself singing (30 seconds)", "**Record** youself cutting a 10, 000 vnd note"];
 
@@ -37,7 +36,7 @@ class truthordareCommand extends commando.Command {
 
         if (!message.member.roles.has(adminrole.id)) return message.channel.send("Insufficient permission. You do not have permission to start this game");
 
-        truthordarechannel.send({embed: new Discord.RichEmbed()
+        var truthordareembed = new Discord.RichEmbed()
             .setTitle("**Slender [] Truth OR Dare**")
             .setColor("#BFB4FF")
             .setFooter("Slender Bot [] hieu#0843")
@@ -46,7 +45,13 @@ class truthordareCommand extends commando.Command {
             .addField("If you don't respond to one answer within 1 day or do not do the dare / tell us the truth, you will have to: ", punishments[Math.floor(Math.random() * punishments.length)])
             .addField("__Truth Option__", truthoption[Math.floor(Math.random() * truthoption.length)])
             .addField("__Dare Option__", dareoption[Math.floor(Math.random() * dareoption.length)])
-            .addField("If you dip out, you will eliminated from this game permanently", ";)")}) 
+            .addField("If you dip out, you will eliminated from this game permanently", ";)")
+
+        truthordarechannel.send(truthordareembed)
+        .then(msg => {
+          msg.react('🔥');
+      })
+      .catch(() => console.error('Emoji failed to react.'));
     }
 }
 
