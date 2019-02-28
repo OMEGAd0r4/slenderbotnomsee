@@ -31,11 +31,7 @@ class killmarykissCommand extends commando.Command {
 
     var killmarrykissusers = ["Hieu L", "Duong", "Bill", "Danny", "Quan", "Win", "Nhan", "Jack", "Minseo", "Yoonseo", "Vinh", "Hieu N", "Ly", "Sophia", "Polly", "Khanh han", "Yen", "Trung", "Dan", "Kyu Na", "Ye Young", "Yebin", "Vy", "Tran", "Bach", "Gia Hy", "Khoa", "Khue", "Trung Anh", "Bao Khanh", "Ford", "Toan", "Ella", "Siyeon", "Yuki", "Jolie", "David", "Ann", "Princess"];
 
-    var killmarrykissusers2 = ["Hieu L", "Duong", "Bill", "Danny", "Quan", "Win", "Nhan", "Jack", "Minseo", "Yoonseo", "Vinh", "Hieu N", "Ly", "Sophia", "Polly", "Khanh han", "Yen", "Trung", "Dan", "Kyu Na", "Gia Hy", "Khoa", "Khue", "Trung Anh", "Bao Khanh", "Ford", "Toan", "Ella", "Siyeon", "Yuki", "Jolie", "David", "Ann", "Princess", "Ye Young", "Yebin", "Vy", "Tran", "Bach"];
-
-    var killmarrykissusers3 = ["Yoonseo", "Vinh", "Hieu N", "Ly", "Sophia", "Polly", "Khanh han", "Yen", "Trung", "Dan", "Kyu Na", "Ye Young", "Yebin", "Vy", "Tran", "Bach", "Gia Hy", "Khoa", "Khue", "Trung Anh", "Bao Khanh", "Ford", "Toan", "Ella", "Siyeon", "Yuki", "Jolie", "David", "Ann", "Princess", "Hieu L", "Duong", "Bill", "Danny", "Quan", "Win", "Nhan", "Jack", "Minseo"];
-
-    var killmarrykissplayers = ["Quan", "Danny", "Bill", "Nhan", "Ella", "David", "Win", "Sophia", "Hieu"];
+    var killmarrykissplayers = ["Quan", "Danny", "Bill", "Nhan", "Ella", "David", "Win", "Sophia", "Hieu L", "Hieu N", "B.K", "Nhan", "Gia Hy (Bald)"];
 
     killmarrykisschannel.send({embed: new Discord.RichEmbed()
       .setTitle("**Kill, Marry, Kiss**")
