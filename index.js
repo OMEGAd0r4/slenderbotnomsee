@@ -9,7 +9,7 @@ const Music = require('discord.js-musicbot-addon');
 //PLUGINS
 
 //BOT TOKEN
-bot.login(process.env.token);
+bot.login("NTQ3MzYwMzgyMjk0MTYzNDU4.D01ovA.B3atJErlNcIXVnRmx_aUHSPEw5Q");
 //BOT TOKEN
 
 //GETS THE BOT ONLINE
@@ -22,6 +22,7 @@ bot.on('ready',function(){
 
 //REGISTIES
 bot.registry.registerGroup('admin', 'ADMIN');
+bot.registry.registerGroup('games', 'GAMES');
 bot.registry.registerGroup('fun', 'FUN');
 bot.registry.registerGroup('essential', 'ESSENTIAL');
 bot.registry.registerCommandsIn(__dirname + "/commands");
