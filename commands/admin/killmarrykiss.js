@@ -31,7 +31,7 @@ class killmarykissCommand extends commando.Command {
 
     var killmarrykissusers = ["Hieu L", "Duong", "Bill", "Danny", "Quan", "Win", "Nhan", "Jack", "Minseo", "Yoonseo", "Vinh", "Hieu N", "Ly", "Sophia", "Polly", "Khanh han", "Yen", "Trung", "Dan", "Kyu Na", "Ye Young", "Yebin", "Vy", "Tran", "Bach", "Gia Hy", "Khoa", "Khue", "Trung Anh", "Bao Khanh", "Ford", "Toan", "Ella", "Siyeon", "Yuki", "Jolie", "David", "Ann", "Princess"];
 
-    var killmarrykissplayers = ["Quan", "Danny", "Bill", "Nhan", "Ella", "David", "Win", "Sophia", "Hieu L", "Hieu N", "B.K", "Nhan", "Gia Hy (Bald)"];
+    var killmarrykissplayers = ["Quan", "Danny", "Bill", "Nhan", "Ella", "David", "Win", "Sophia", "Hieu L", "Hieu N", "B.K", "Nhan", "Gia Hy (Bald)", "Gia Hy (Black)", "James", "Nhi"];
 
     killmarrykisschannel.send({embed: new Discord.RichEmbed()
       .setTitle("**Kill, Marry, Kiss**")
