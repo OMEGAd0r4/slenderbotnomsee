@@ -21,7 +21,14 @@ class randomgameCommand extends commando.Command {
 
     message.delete(3000).catch(O_o=>{});
 
-    var games = ["Skrbbl.io - https://skribbl.io/", "Krunker - https://krunker.io/", "Watch a video together - https://sync-video.com/", "Type Racer - https://play.typeracer.com/", "Zombs Royale - https://zombsroyale.io/"]
+    var games = ["Skrbbl.io - https://skribbl.io/", "Krunker - https://krunker.io/", "Watch a video together - https://sync-video.com/", "Type Racer - https://play.typeracer.com/", "Zombs Royale - https://zombsroyale.io/"];
+
+    message.channel.send({embed: new Discord.RichEmbed()
+      .setTitle("**Slender [] RandomGames**")
+      .setColor("#BFB4FF")
+      .addField("The slender bot suggests you to play:", games[Math.floor(Math.random() * games.length)])
+      .setFooter("Slender Bot [] hieu#0843")
+      .setTimestamp()})
 
   }
 }
