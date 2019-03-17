@@ -9,7 +9,7 @@ const Music = require('discord.js-musicbot-addon');
 //PLUGINS
 
 //BOT TOKEN
-bot.login(process.env.token);
+bot.login();
 //BOT TOKEN
 
 //GETS THE BOT ONLINE
