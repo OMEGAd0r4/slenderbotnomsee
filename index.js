@@ -64,7 +64,7 @@ bot.on('message', async message => {
     //2 looking for words
     let foundInText = false;
     for (var i in messagelogsmessage) { // loops through the messagelogsmessage list
-      if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
+      if (message.content.toLowerCase().includes(messagelogsmessage[i].toLowerCase())) foundInText = true;
     }
       if (foundInText) {
         bot.channels.get('562278117717180426').send({embed: new Discord.RichEmbed()
