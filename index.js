@@ -56,6 +56,31 @@ bot.on('message', async message => {
 });
 //ANTI-SWEAR GUARDIAN
 
+//MESSAGE LOGS
+bot.on('message', async message => {
+    //blacklisted words
+    let messagelogsmessage = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8". "9", "0" , "-" , "+" , "!", "2", ";", ":", "'", ".", "/", "?", "@", "#", "$", "%", "^", "&", "*", "(", ")", "`", "~", "<",", "[", "]", "{", "}"]; //words put , after the word
+  
+    //2 looking for words
+    let foundInText = false;
+    for (var i in messagelogsmessage) { // loops through the messagelogsmessage list
+      if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
+    }
+    // checks casesensitive words
+  
+    //3 deletes and send message
+      if (foundInText) {
+        bot.channels.get('508462044584869907').send({embed: new Discord.RichEmbed()
+            .setTitle("**Slender [] Message Logs**")
+            .setColor("#BFB4FF")
+            .addField("Message author", message.author.tag)
+            .addField("Text sent", message.content)
+            .setTimestamp()
+            .setFooter("Slender Bot [] hieu#0843")})
+    }
+});
+//MESSAGE LOGS
+
 //WELCOME MESSAGE
 bot.on('guildMemberAdd', (member) => {
   const welcomechannel = member.guild.channels.find('name', `👋-welcome`);
