@@ -82,7 +82,7 @@ bot.on("messageDelete", (messageDelete) => {
         bot.channels.get('562278117717180426').send({embed: new Discord.RichEmbed()
             .setTitle("**Slender [] Message Logs**")
             .setColor("#BFB4FF")
-            .addField("Deleted message author", message.author.tag)
+            .addField("Deleted message author", messageDelete.author.tag)
             .addField("Deleted message", messageDelete.content)
             .addField("Text channel", messageDelete.channel)
             .setTimestamp()
