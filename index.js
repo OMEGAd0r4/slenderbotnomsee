@@ -66,11 +66,8 @@ bot.on('message', async message => {
     for (var i in messagelogsmessage) { // loops through the messagelogsmessage list
       if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
     }
-    // checks casesensitive words
-  
-    //3 deletes and send message
       if (foundInText) {
-        bot.channels.get('508462044584869907').send({embed: new Discord.RichEmbed()
+        bot.channels.get('562278117717180426').send({embed: new Discord.RichEmbed()
             .setTitle("**Slender [] Message Logs**")
             .setColor("#BFB4FF")
             .addField("Message author", message.author.tag)
