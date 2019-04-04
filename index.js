@@ -72,6 +72,7 @@ bot.on('message', async message => {
             .setColor("#BFB4FF")
             .addField("Message author", message.author.tag)
             .addField("Text sent", message.content)
+            .addField("Text channel", message.channel)
             .setTimestamp()
             .setFooter("Slender Bot [] hieu#0843")})
     }
