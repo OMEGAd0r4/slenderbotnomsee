@@ -67,7 +67,7 @@ bot.on('message', async message => {
       if (message.content.toLowerCase().includes(messagelogsmessage[i].toLowerCase())) foundInText = true;
     }
       if (foundInText) {
-        bot.channels.get('562278117717180426').send({embed: new Discord.RichEmbed()
+        bot.channels.get('581061162687528968').send({embed: new Discord.RichEmbed()
             .setTitle("**Slender [] Message Logs**")
             .setColor("#BFB4FF")
             .addField("Message author", message.author.tag)
@@ -79,7 +79,7 @@ bot.on('message', async message => {
 });
 
 bot.on("messageDelete", (messageDelete) => {
-        bot.channels.get('563305590210691073').send({embed: new Discord.RichEmbed()
+        bot.channels.get('581061162687528968').send({embed: new Discord.RichEmbed()
             .setTitle("**Slender [] Message Logs**")
             .setColor("#BFB4FF")
             .addField("Deleted message author", messageDelete.author.tag)
