@@ -26,6 +26,9 @@ class sofiaCommand extends commando.Command {
       .setColor("#f442df")
       .addField("STFU before I rip ur tiny 455 balls off.", "- Sofia 2k19")})
 
+    var sofiarole = message.guild.roles.find(`name`, "toxic tity");
+        
+    if (!message.member.roles.has(sofiarole.id)) return message.channel.send("``Insufficient permission. You do not have a role called 'toxic tity'``");
   }
 }
 
