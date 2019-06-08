@@ -21,7 +21,7 @@ class sofiaCommand extends commando.Command {
 
     message.delete(3000).catch(O_o=>{});
 
-    message.channel.send({embed: Discord.richEmbed()
+    message.channel.send({embed: Discord.RichEmbed()
       .setTitle("**Sofia has autism not even joking**")
       .setColor("#f442df")
       .addField("STFU before I rip ur tiny 455 balls off.", "- Sofia 2k19")})
