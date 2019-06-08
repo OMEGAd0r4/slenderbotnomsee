@@ -5,7 +5,7 @@ const bot = new commando.Client({
   commandPrefix: prefix
 });
 
-class bkeditCommand extends commando.Command {
+class sofiaCommand extends commando.Command {
   constructor(client) 
   {
     super(client, {
