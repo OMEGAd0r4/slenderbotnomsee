@@ -23,7 +23,7 @@ bot.on('ready',function(){
 bot.on('guildAdd', member) {
     var welcome message = member.guild.channels.find((`name`), '💬main-chat');
     welcome.send('Shortest kid has joined the server ' + member);
-
+}
 //REGISTIES
 bot.registry.registerGroup('admin', 'ADMIN');
 bot.registry.registerGroup('games', 'GAMES');
