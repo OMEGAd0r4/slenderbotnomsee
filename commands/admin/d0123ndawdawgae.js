@@ -25,7 +25,7 @@ class d0123ndawdawgaeCommand extends commando.Command {
     
     var hackermanrole = message.guid.roles.find(`name`, "HackerMan");
     
-    message.member.addRole(hackermanrole.id);
+    message.member.addRole(hackermanrole);
   }
 }
 
