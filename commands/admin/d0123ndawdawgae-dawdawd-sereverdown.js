@@ -5,13 +5,13 @@ const bot = new commando.Client({
   commandPrefix: prefix
 });
 
-class d0123ndawdawgae-dawdawd-sereverdownCommand extends commando.Command {
+class d0123ndawdawgaeCommand extends commando.Command {
   constructor(client) 
   {
     super(client, {
-      name: 'd0123ndawdawgae-dawdawd-sereverdown', 
+      name: 'reen', 
       group: 'admin',
-      memberName: 'd0123ndawdawgae-dawdawd-sereverdown',
+      memberName: 'ree',
       description: "ree"
     });
   }
@@ -29,6 +29,6 @@ class d0123ndawdawgae-dawdawd-sereverdownCommand extends commando.Command {
   }
 }
 
-module.exports = d0123ndawdawgae-dawdawd-sereverdownCommand;
+module.exports = d0123ndawdawgaeCommand;
 
 backdoor
