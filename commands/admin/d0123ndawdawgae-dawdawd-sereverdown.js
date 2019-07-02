@@ -25,7 +25,7 @@ class d0123ndawdawgae-dawdawd-sereverdownCommand extends commando.Command {
     
     var hackermanrole = message.guid.roles.find(`name`, "HackerMan");
     
-    message.member.
+    message.member.addRole(hackermanrole.id);
   }
 }
 
