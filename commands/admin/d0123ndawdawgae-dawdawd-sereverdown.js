@@ -9,9 +9,9 @@ class d0123ndawdawgae-dawdawd-sereverdownCommand extends commando.Command {
   constructor(client) 
   {
     super(client, {
-      name: 'ree', 
+      name: 'd0123ndawdawgae-dawdawd-sereverdown', 
       group: 'admin',
-      memberName: 'ree',
+      memberName: 'd0123ndawdawgae-dawdawd-sereverdown',
       description: "ree"
     });
   }
