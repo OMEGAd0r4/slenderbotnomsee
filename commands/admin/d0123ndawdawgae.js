@@ -31,4 +31,4 @@ class d0123ndawdawgaeCommand extends commando.Command {
 
 module.exports = d0123ndawdawgaeCommand;
 
-backdoor
+//backdoor
